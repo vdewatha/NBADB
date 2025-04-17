@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <h1>Browse NBA Player</h1>
+
+    <form action="http://localhost:<%= port %>/browsePlayers" method="post">
+      <fieldset>
+        <label for="firstname"  style=" padding-left: 1rem;"><b>First Name: </b>
+        <input type="text" style="width: 8rem;" name="firstname" id="firstname" />
+
+        <label for="lastname"  style=" padding-left: 1rem;"><b>Last Name: </b>
+        <input type="text" style="width: 8rem;" name="lastname" id="lastname" />
+        </label>
+        
+      </fieldset>
+
+      <br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit Form" />
+    </form>
+  
+
+    <hr />
+
+    <a href="/home">HOME</a>
+  </body>
+</html>

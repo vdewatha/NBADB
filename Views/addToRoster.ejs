@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <h1>Add Players to Roster</h1>
+
+    <form action="http://localhost:<%= port %>/addToRoster" method="post">
+      <fieldset>
+        <label for="yourname"><b>Your Name: </b>
+        <input  type="text" name="yourname" id="yourname" />
+        </label>
+
+        <br><br>
+        <b>PG:</b>
+        <label for="pg"><b>Player Name: </b>
+        <input type="text" style="width: 7.4rem;" name="pg" id="pg" />
+        </label>
+
+        <br><br>
+        <b>SG:</b>
+        <label for="sg"><b>Player Name: </b>
+        <input type="text" style="width: 7.4rem;" name="sg" id="sg" />
+        </label>
+        
+        <br><br>
+        <b>SF:</b>
+        <label for="sf"><b>Player Name: </b>
+        <input type="text" style="width: 7.4rem;" name="sf" id="sf" />
+        </label>
+
+        <br><br>
+        <b>PF:</b>
+        <label for="pf"><b>Player Name: </b>
+        <input type="text" style="width: 7.4rem;" name="pf" id="pf" />
+        </label>
+
+        <br><br>
+        <b>C:</b>
+        <label for="c"><b>Player Name: </b>
+        <input type="text" style="width: 8rem;" name="c" id="c" />
+        </label>
+
+      </fieldset>
+
+      <br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit Form" />
+    </form>
+
+    <!-- style=" padding-left: 1rem;" -->
+
+    <hr />
+
+    <a href="/home">HOME</a>
+  </body>
+</html>

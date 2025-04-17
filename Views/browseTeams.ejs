@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <h1>Browse Teams</h1>
+
+    <form action="http://localhost:<%= port %>/browseTeams" method="post">
+      <fieldset>
+       
+        <label for="teamname" style="padding-right: 0.5rem;"><b>Team Name: </b>
+        <input type="teamname" name="teamname" id="teamname" />
+        </label>
+
+        <br /><br />
+ 
+      </fieldset>
+
+      <br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit Form" />
+    </form>
+
+  
+
+    <hr />
+
+    <a href="/home">HOME</a>
+  </body>
+</html>

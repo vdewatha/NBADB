@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <h1>Check Roster by Username</h1>
+
+    <form action="http://localhost:<%= port %>/viewRoster" method="post">
+      <fieldset>
+        <label for="user"><b>Your Name: </b>
+        <input  type="text" id="user" />
+        </label>
+
+      <br />     <br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit Form" />
+    </form>
+
+    <!-- style=" padding-left: 1rem;" -->
+
+    <hr />
+
+    <a href="/">HOME</a>
+  </body>
+</html>
